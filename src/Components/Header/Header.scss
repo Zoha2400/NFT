@@ -1,0 +1,243 @@
+
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #0e0e0fcc;
+    backdrop-filter: blur(10px);
+    border-bottom: solid 1px #1f1f20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.brandBtn{
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    
+
+    .brandBtnItem{
+        font-size: 13px;
+        color: #636363;
+
+        border-radius: 5px;
+        width: auto;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            background-color: #1a1a1a;
+        }
+    }
+}
+
+.brand{
+    width: 200px;
+    height: 40px;
+    border-right: solid 2px #1f1f20;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 130px;
+        height: auto;
+    }
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 25px;
+}
+
+.search{
+    height: 40px;
+    width: 220px;
+    border: solid 2px #1f1f20;
+    border-radius: 10px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2px;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        background-color: #1a1a1a;
+        border:solid 2px rgb(0, 104, 223);
+    }
+
+    #search{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        transition: 0.5s ease-in-out;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    img{
+        width: 15px;
+        height: 15px;
+        padding: 10px;
+        border-radius: 100%;
+        transition: 0.3s ease-in-out;
+        
+        &:hover{
+            background-color: #1a1a1a;
+        }
+    }
+}
+
+
+.notify{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 100%;
+    transition: 0.5s ease-in-out;
+
+    &:hover{
+        background-color: #1a1a1a;
+    }
+}
+
+.menuBtn{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.upload{
+    width: 80px;
+    height: 40px;
+    background-color: #3772FF;
+    color: white;
+
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+
+    &:hover{
+        background-color: lighten(#3772FF, 5%);
+    }
+}
+
+.connectWallet{
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    border: solid #1a1a1a 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #1a1a1a;
+        border:solid 2px rgb(0, 104, 223);
+    }
+}
+
+.MobiMenu{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: none;
+    p{
+        width: 25px;
+        height: 1px;
+        background-color: white;
+        transition: 0.3s;
+        margin: 10px;
+    }
+}
+
+
+.miniMenu{
+    max-width: 100vw;
+    width: 100vw;
+    min-width: 340px;
+    display: none;
+    position: absolute;
+    margin-top: 60px;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(1200px);
+    transition: 0.3s;
+
+    .itemsMiniMenu-wrapper{
+        width: 93%;
+        margin: 40px;
+        background-color: #23262f;
+        backdrop-filter: blur(8px) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 16px 64px rgba(0, 0, 0, 0.8);
+        border-radius: 12px;
+        
+        .itemsMiniMenu{
+            width: 80%;
+            height: 100%;
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            grid-gap: 10px;
+
+            .MenuTitle{
+                font-weight: 900;
+                font-size: 20px !important;
+                transform: translateY(-5px);
+            }
+
+            .itemMenu{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                grid-gap: 5px;
+                border-radius: 15px;    
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+                svg{
+                    margin-left: 15px;
+                }
+
+                &:hover{
+                    background-color: #1357f5;
+                }
+            }
+        }
+    }
+}
