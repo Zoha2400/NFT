@@ -1,5 +1,6 @@
 import React from 'react'
 import CreatorNetwork from '../CreatorNetwork/CreatorNetwork'
+import Recomendation from '../Recomendation/Recomendation'
 import './Home.scss'
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
 
         <StartSearch/>
         <CreatorNetwork/>
+        <Recomendation/>
 
     </div>
   )
